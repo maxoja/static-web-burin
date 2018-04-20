@@ -18,6 +18,51 @@
     margin-top:100px;
 }
 
+/* P2 */
+#p2-content-text-red{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #B12014;
+}
+#p2-content-text-brown{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #523701;
+}
+#p2-content-text-red-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #B12014;
+}
+#p2-content-text-brown-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #523701;
+}
+
+/* P3 */
+
+#p3-content-text-red{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #B12014;
+}
+#p3-content-text-brown{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #523701;
+}
+#p3-content-text-red-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #B12014;
+}
+#p3-content-text-brown-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #523701;
+}
+
 /* P4 */
 #p4-heading{
     width: 700px;
@@ -39,6 +84,50 @@
     color: #B12014;
 }
 #p4-content-text-brown-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #523701;
+}
+
+/* P5 */
+#p5-content-text-red{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #B12014;
+}
+#p5-content-text-brown{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #523701;
+}
+#p5-content-text-red-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #B12014;
+}
+#p5-content-text-brown-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #523701;
+}
+
+/* P6 */
+#p6-content-text-red{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #B12014;
+}
+#p6-content-text-brown{
+    font-family: "main-font";
+    font-size: 18px;
+    color: #523701;
+}
+#p6-content-text-red-mobile{
+    font-family: "main-font";
+    font-size: 2vw;
+    color: #B12014;
+}
+#p6-content-text-brown-mobile{
     font-family: "main-font";
     font-size: 2vw;
     color: #523701;
