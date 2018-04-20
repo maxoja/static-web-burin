@@ -9,21 +9,17 @@
     width:800px;
 }
 
-#blue-text{
-    color:#73c3fe;
-}
-
-#pink-text{
-    color:#f06c4d;
-}
-
-/* P4 */
-#p4-body{
-    background-image: url("images/p4/bg.png");
+/* PAGES */
+#p-body{
     background-color: #f6d0c7;
 }
 
-#p4-headimg{
+#logo-box{
+    margin-top:100px;
+}
+
+/* P4 */
+#p4-heading{
     width: 700px;
 }
 
@@ -39,12 +35,12 @@
 }
 #p4-content-text-red-mobile{
     font-family: "main-font";
-    font-size: 2.75vw;
+    font-size: 2vw;
     color: #B12014;
 }
 #p4-content-text-brown-mobile{
     font-family: "main-font";
-    font-size: 2.75vw;
+    font-size: 2vw;
     color: #523701;
 }
 
@@ -54,17 +50,16 @@ body{
     background-repeat: repeat;
 }
 
-/* div{
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+#content-box-desktop
+{
+    width:1300px;
 }
 
-img{
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-} */
+#content-box-mobile
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 .bottom-text{
     font-family: "main-font";
@@ -110,3 +105,15 @@ img{
     font-family: "main-font";
     src:url("images/font/Kanit-Light.ttf");
 }
+
+/* div{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+img{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+} */
