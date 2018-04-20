@@ -27,6 +27,16 @@
     width: 700px;
 }
 
+#p4-content-text-red{
+    font-family: "main-font";
+    font-size: "12x";
+    color: #B12014;
+}
+#p4-content-text-brown{
+    font-family: "main-font";
+    font-size: "12px";
+    color: #523701;
+}
 
 
 /* SHARING ID */
