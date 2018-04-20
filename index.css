@@ -1,0 +1,93 @@
+/* HOME */
+#home-body{
+    background-image: url("images/p1/bg.png");
+    background-color: #c5e2f7;
+}
+
+#home-title
+{
+    width:800px;
+}
+
+#blue-text{
+    color:#73c3fe;
+}
+
+#pink-text{
+    color:#f06c4d;
+}
+
+/* P4 */
+#p4-body{
+    background-image: url("images/p4/bg.png");
+    background-color: #f6d0c7;
+}
+
+#p4-headimg{
+    width: 700px;
+}
+
+
+
+/* SHARING ID */
+body{
+    background-size: 1400px;
+    background-repeat: repeat;
+}
+
+/* div{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+img{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+} */
+
+.bottom-text{
+    font-family: "main-font";
+    font-size: 10px;
+}
+
+#outerbox{
+    margin-top: 170px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#menu-box{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.menu-button 
+{
+    border: 0px;
+    width: 16%;
+    /* width: 190px; */
+}
+
+#logo{
+    width: 100px;
+}
+
+#webname
+{
+    width:700px;
+}
+
+#line{
+    width:90%;
+}
+
+#content-box{
+    width:1000px;
+}
+
+@font-face {
+    font-family: "main-font";
+    src:url("images/font/Kanit-Light.ttf");
+}
