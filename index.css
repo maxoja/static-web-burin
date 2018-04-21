@@ -19,48 +19,39 @@
 }
 
 /* P2 */
-#p2-content-text-red{
+#p2-content-text{
     font-family: "main-font";
-    font-size: 18px;
-    color: #B12014;
+    font-size: 13px;
+    color: #6e4f0d;
 }
-#p2-content-text-brown{
+
+#p2-content-text-mobile{
     font-family: "main-font";
-    font-size: 18px;
-    color: #523701;
-}
-#p2-content-text-red-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #B12014;
-}
-#p2-content-text-brown-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #523701;
+    font-size: 2.9vw;
+    color: #6e4f0d;
 }
 
 /* P3 */
 
-#p3-content-text-red{
+#p3-content-text-pink{
     font-family: "main-font";
-    font-size: 18px;
-    color: #B12014;
+    font-size: 13.8px;
+    color: #a22e3a;
 }
 #p3-content-text-brown{
     font-family: "main-font";
-    font-size: 18px;
-    color: #523701;
+    font-size: 13.8px;
+    color: #6c4c19;
 }
-#p3-content-text-red-mobile{
+#p3-content-text-pink-mobile{
     font-family: "main-font";
-    font-size: 2vw;
-    color: #B12014;
+    font-size: 2.8vw;
+    color: #a22e3a;
 }
 #p3-content-text-brown-mobile{
     font-family: "main-font";
-    font-size: 2vw;
-    color: #523701;
+    font-size: 2.8vw;
+    color: #6c4c19;
 }
 
 /* P4 */
@@ -169,7 +160,7 @@ body{
 .menu-button 
 {
     border: 0px;
-    width: 16%;
+    width: 15%;
     /* width: 190px; */
 }
 
