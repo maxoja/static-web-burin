@@ -81,48 +81,32 @@
 }
 
 /* P5 */
-#p5-content-text-red{
+#p5-content-text-black{
     font-family: "main-font";
-    font-size: 18px;
-    color: #B12014;
-}
-#p5-content-text-brown{
-    font-family: "main-font";
-    font-size: 18px;
-    color: #523701;
-}
-#p5-content-text-red-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #B12014;
-}
-#p5-content-text-brown-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #523701;
+    font-size: 14px;
+    color: #1B1718;
 }
 
+#p5-content-text-black-mobile{
+    font-family: "main-font";
+    font-size: 2.75vw;
+    color: #1B1718;
+}
+
+
 /* P6 */
-#p6-content-text-red{
+#p6-content-text-purple{
     font-family: "main-font";
-    font-size: 18px;
-    color: #B12014;
+    font-size: 14px;
+    color: #5B0074;
 }
-#p6-content-text-brown{
+
+#p6-content-text-purple-mobile{
     font-family: "main-font";
-    font-size: 18px;
-    color: #523701;
+    font-size: 2.75vw;
+    color: #5B0074;
 }
-#p6-content-text-red-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #B12014;
-}
-#p6-content-text-brown-mobile{
-    font-family: "main-font";
-    font-size: 2vw;
-    color: #523701;
-}
+
 
 /* SHARING ID */
 body{
@@ -185,6 +169,7 @@ body{
     font-family: "main-font";
     src:url("images/font/Kanit-Light.ttf");
 }
+
 
 /* div{
     border-color: black;
