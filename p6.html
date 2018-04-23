@@ -87,7 +87,6 @@
 <script>
         var logo = document.getElementById("logo");
         var body = document.getElementById("p-body");
-        var title = document.getElementById("head-box");
         var menubox = document.getElementById("menu-button-box");
         var bottombox= document.getElementById("bottom-box")
         var buttons = document.getElementsByClassName("menu-button")
@@ -95,7 +94,7 @@
         var contentmobile = document.getElementById("content-box-mobile")
         
         var testmobile = false
-        // var testmobile = true
+        var testmobile = true
         
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) | testmobile) {
             // CHANGE THIS FOR EACH PAGE
@@ -103,7 +102,6 @@
             body.style.backgroundSize = "100%";
             
             logo.style.width = "150px"
-            title.style.marginTop = "50px";
             menubox.style.marginTop = "50px";
             contentdesktop.hidden = true;
             contentmobile.hidden = false;
