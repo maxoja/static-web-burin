@@ -7,7 +7,7 @@
     </head>
       
     <!-- CHANGE THIS FOR EACH PAGE -->
-    <body id="p-body" style="background-image:url('images/p3/bg.png'); background-color: #f6d7da;">
+    <body onresize="onresize()" id="p-body" style="background-image:url('images/p3/bg.png'); background-color: #f6d7da;">
 
             <!-- LOGO -->
             <div id="logo-box">
@@ -19,11 +19,11 @@
                 <center><img SRC = "images/websitename.png" id = "webname"/></center>
             </div>
             
-            <!-- MENU -->
+            <!-- MENU --> 
             <div id="menu-box" style="margin-top: 30px">
 
                 <center>
-                    <div id="menu-button- box" style="width: 700px;">
+                    <div id="menu-button-box" style="width: 700px;">
                         <a href="index.html"><IMG SRC="images/blue.png"  class="menu-button"/></a>
                         <a href="p2.html"><IMG SRC="images/yellow.png"  class="menu-button"/></a>
                         <a href="p3.html"><IMG SRC="images/pink.png"  class="menu-button"/></a>
@@ -95,41 +95,46 @@
             <center><p><b class="bottom-text" style="color:#f97077;">เว็บไซต์นี้เป็นผลงานของนักศึกษาในวิชาออกแบบเว็บไซต์ ภาควิชานิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าฯ เจ้าคุณทหารลาดกระบัง</b></p></center>
         </div>
 
+
+<script>
+        // function onresize(){    
+            var logo = document.getElementById("logo");
+            var body = document.getElementById("p-body");
+            var menubox = document.getElementById("menu-button-box");
+            var bottombox= document.getElementById("bottom-box")
+            var buttons = document.getElementsByClassName("menu-button")
+            var contentdesktop = document.getElementById("content-box-desktop")
+            var contentmobile = document.getElementById("content-box-mobile")
+            
+            var testmobile = false;// | (window.outerWidth <= 500);
+            // var testmobile = true
+            
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) | testmobile) {
+                // CHANGE THIS FOR EACH PAGE
+                body.style.backgroundImage = "url('images/p3/bg-mobile.png')";
+                body.style.backgroundSize = "100%";
+                
+                logo.style.width = "150px"
+                menubox.style.marginTop = "50px";
+                contentdesktop.hidden = true;
+                contentmobile.hidden = false;
+                // content.style.width = "auto";
+                // content.style.marginLeft = "0px";
+                // content.style.marginRight = "0px";
+            
+                for(var i = 0 ; i < buttons.length ; i++){
+                    buttons[i].style.width = "33%"
+                }
+            } else {
+                contentdesktop.hidden = false;
+                contentmobile.hidden = true;
+            }
+        // }
+    
+        // onresize();
+    </script>
+
     </body>
 
 </html>
 
-
-<script>
-        var logo = document.getElementById("logo");
-        var body = document.getElementById("p-body");
-        var menubox = document.getElementById("menu-button-box");
-        var bottombox= document.getElementById("bottom-box")
-        var buttons = document.getElementsByClassName("menu-button")
-        var contentdesktop = document.getElementById("content-box-desktop")
-        var contentmobile = document.getElementById("content-box-mobile")
-        
-        var testmobile = false
-        // var testmobile = true
-        
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) | testmobile) {
-            // CHANGE THIS FOR EACH PAGE
-            body.style.backgroundImage = "url('images/p3/bg-mobile.png')";
-            body.style.backgroundSize = "100%";
-            
-            logo.style.width = "150px"
-            menubox.style.marginTop = "50px";
-            contentdesktop.hidden = true;
-            contentmobile.hidden = false;
-            // content.style.width = "auto";
-            // content.style.marginLeft = "0px";
-            // content.style.marginRight = "0px";
-        
-            for(var i = 0 ; i < buttons.length ; i++){
-                buttons[i].style.width = "33%"
-            }
-        } else {
-            contentdesktop.hidden = false;
-            contentmobile.hidden = true;
-        }
-        </script>
