@@ -11,16 +11,16 @@
         <a onclick="topFunction()" id="myBtn"><IMG SRC="images/thumbnail_top.png"/></a>
             <!-- LOGO -->
             <div id="logo-box">
-                <center><img SRC = "images/logo.png" id = "logo"/></center>
+                <center><img SRC = "images/logonotforhome.png" id = "logo"/></center>
             </div>
 
-            <!-- WWW.POSTCARDLOVER.COM -->
+            <!-- WWW.POSTCARDLOVER.COM
             <div id="name-box" style="margin-top: 0px;">
                 <center><img SRC = "images/websitename.png" id = "webname"/></center>
-            </div>
+            </div> -->
             
             <!-- MENU -->
-            <div id="menu-box" style="margin-top: 30px">
+            <div id="menu-box" style="margin-top: 0px">
 
                 <center>
                     <div id="menu-button-box" style="width:700px;">
@@ -101,9 +101,9 @@
         var contentdesktop = document.getElementById("content-box-desktop")
         var contentmobile = document.getElementById("content-box-mobile")
         
-        var testmobile = false
-        //var testmobile = true
         window.onscroll = function() {scrollFunction()};
+        window.onresize = function() {updatepage()};
+        updatepage();
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -118,25 +118,36 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) | testmobile) {
-            // CHANGE THIS FOR EACH PAGE
-            body.style.backgroundImage = "url('images/p6/bg-mobile.png')";
-            body.style.backgroundSize = "100%";
-            
-            logo.style.width = "150px"
-            menubox.style.marginTop = "50px";
-            contentdesktop.hidden = true;
-            contentmobile.hidden = false;
-            // content.style.width = "auto";
-            // content.style.marginLeft = "0px";
-            // content.style.marginRight = "0px";
         
-            for(var i = 0 ; i < buttons.length ; i++){
-                buttons[i].style.width = "33%"
+        function updatepage(){
+            var testmobile = false | (window.innerWidth < 750);
+            // var testmobile = true
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) | testmobile) {
+                // CHANGE THIS FOR EACH PAGE
+                body.style.backgroundImage = "url('images/p6/bg-mobile.png')";
+                body.style.backgroundSize = "100%";
+                
+                logo.style.width = "150px"
+                menubox.style.marginTop = "50px";
+                contentdesktop.hidden = true;
+                contentmobile.hidden = false;
+            
+                for(var i = 0 ; i < buttons.length ; i++){
+                    buttons[i].style.width = "33%"
+                }
+            } else {
+                body.style.backgroundImage = "url('images/p6/bg.png')";
+                body.style.backgroundSize = "auto"
+
+                logo.style.width = "150px"
+                menubox.style.marginTop = "auto"
+                contentdesktop.hidden = false;
+                contentmobile.hidden = true;
+
+                for(var i = 0 ; i < buttons.length ; i++){
+                    buttons[i].style.width = "15%"
+                }
             }
-        } 
-        else {
-            contentdesktop.hidden = false;
-            contentmobile.hidden = true;
         }
         </script>
