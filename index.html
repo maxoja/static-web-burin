@@ -75,6 +75,20 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
         buttons[i].style.width = "33%"
     }
 } else {
-
 }
+
+for(var i = 0 ; i < buttons.length ; i++)
+{
+    switch(i)
+        {
+            //to solve button disappear bug in mobile
+            case 0: buttons[i].style.src = "images/blue.png"; break;
+            case 1: buttons[i].style.src = "images/yellow.png"; break;
+            case 2: buttons[i].style.src = "images/pink.png"; break;
+            case 3: buttons[i].style.src = "images/orrange.png"; break;
+            case 4: buttons[i].style.src = "images/green.png"; break;
+            case 5: buttons[i].style.src = "images/purple.png"; break;
+        }
+}
+
 </script>
